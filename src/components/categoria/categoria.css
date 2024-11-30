@@ -1,0 +1,38 @@
+.form-container {
+    max-width: 400px;
+    margin: 20px auto; /* Espaciado en la parte superior e inferior */
+    padding: 20px;
+    background: #ffffff; /* Fondo blanco para mayor claridad */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3498db; /* Color del título similar al botón */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita para mayor énfasis */
+    text-transform: uppercase; /* Mayúsculas para un efecto más moderno */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* Espaciado uniforme entre los campos */
+}
+
+.form-label {
+    font-weight: 600; /* Negrita para las etiquetas */
+}
+
+.btn-primary {
+    background-color: #3498db; /* Color de fondo del botón */
+    border-color: #3498db; /* Color del borde */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+    border-color: #2980b9; /* Cambia el color del borde también */
+}
