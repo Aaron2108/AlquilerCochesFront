@@ -44,7 +44,7 @@ const useFetchAlquiler = () => {
 
     const updateAlquiler = (id,credentials) => {
         setIsLoading(true);
-        axios.put(`${baseUrl}${id}`, credentials)
+        axios.put(`${baseUrl}/${id}`, credentials)
         .then(res => {
             setInfoApi(prevInfo => prevInfo.map(item => item.alquiler_id === id ? res.data : item));
             setHasError(false);
@@ -60,7 +60,7 @@ const useFetchAlquiler = () => {
 
     const deleteAlquiler = (id) =>{
         setIsLoading(true);
-        axios.delete(`${baseUrl}${id}`)
+        axios.delete(`${baseUrl}/${id}`)
         .then(res => {
             setInfoApi(prevInfo => prevInfo.filter(item => item.alquiler_id !== id));
             setHasError(false);

@@ -109,7 +109,7 @@ const submit = (data) => {
                 <td>{vehiculo.color}</td>
                 <td>{vehiculo.placa}</td>
                 <td>
-                  {vehiculo.estado_id === 1 ? "Disponible" : "No Disponible"}
+                  {infoApiEstado?.find((estado) => estado.estado_id === vehiculo.estado_id)?.descripcion}
                 </td>
                 <td>
                   <button
