@@ -1,5 +1,21 @@
+import { useEffect } from "react"
 import "./solicitud.css"
+import useFetchVehiculo from "../../services/useFetchVehiculo"
+import useFetchEstado from "../../services/useFetchEstado"
 const Solicitud = () => {
+
+
+    const [getAllVehiculo, createVehiculo, updateVehiculo, deleteVehiculo, infoApiVehiculo] = useFetchVehiculo()
+
+    const [getAllEstado, createEstado, updateEstado, deleteEstado, infoApiEstado] = useFetchEstado() 
+
+     
+
+    useEffect(() => {
+    
+    }, [])
+    
+
   return (
     <div className="form-container">
     <h2 className="form-title">Nueva Solicitud</h2>
